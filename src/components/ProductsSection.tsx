@@ -1,10 +1,10 @@
 import productsImg from "@/assets/chocolate-products.jpg";
 
 const products = [
-  { name: "ڈارک ٹرفل باکس", price: "Rs. 2,500", desc: "بیلجیئم ڈارک چاکلیٹ ٹرفلز کا شاندار مجموعہ" },
-  { name: "ملک چاکلیٹ بار", price: "Rs. 800", desc: "ریشمی ہموار ملک چاکلیٹ، خالص دودھ سے بنی" },
-  { name: "وائٹ چاکلیٹ گفٹ", price: "Rs. 3,000", desc: "سفید چاکلیٹ کا پریمیم تحفہ سیٹ" },
-  { name: "مکس ٹرفل باکس", price: "Rs. 4,500", desc: "ہر قسم کی چاکلیٹ کا بہترین انتخاب" },
+  { name: "Dark Truffle Box", price: "Rs. 2,500", desc: "An exquisite collection of Belgian dark chocolate truffles" },
+  { name: "Milk Chocolate Bar", price: "Rs. 800", desc: "Silky smooth milk chocolate made with pure milk" },
+  { name: "White Chocolate Gift", price: "Rs. 3,000", desc: "Premium white chocolate gift set" },
+  { name: "Mixed Truffle Box", price: "Rs. 4,500", desc: "The finest selection of every type of chocolate" },
 ];
 
 const ProductsSection = () => {
@@ -12,9 +12,9 @@ const ProductsSection = () => {
     <section id="products" className="section-padding bg-secondary/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3">ہماری مصنوعات</p>
+          <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3">Our Products</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-cream">
-            لذیذ <span className="text-gold-gradient">چاکلیٹ کلیکشن</span>
+            Delicious <span className="text-gold-gradient">Chocolate Collection</span>
           </h2>
         </div>
 

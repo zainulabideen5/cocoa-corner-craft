@@ -4,9 +4,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: "#about", label: "ہمارے بارے میں" },
-    { href: "#products", label: "مصنوعات" },
-    { href: "#contact", label: "رابطہ" },
+    { href: "#about", label: "About Us" },
+    { href: "#products", label: "Products" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
