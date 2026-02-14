@@ -3,45 +3,45 @@ const ContactSection = () => {
     <section id="contact" className="section-padding">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3">رابطہ کریں</p>
+          <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-cream">
-            ہم سے <span className="text-gold-gradient">بات کریں</span>
+            Let's <span className="text-gold-gradient">Talk</span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-6">
             <div>
-              <h3 className="text-cream font-display text-xl mb-2">ہمارا پتہ</h3>
-              <p className="text-muted-foreground">لاہور، پاکستان</p>
+              <h3 className="text-cream font-display text-xl mb-2">Our Address</h3>
+              <p className="text-muted-foreground">Lahore, Pakistan</p>
             </div>
             <div>
-              <h3 className="text-cream font-display text-xl mb-2">فون نمبر</h3>
+              <h3 className="text-cream font-display text-xl mb-2">Phone Number</h3>
               <p className="text-muted-foreground">+92 300 1234567</p>
             </div>
             <div>
-              <h3 className="text-cream font-display text-xl mb-2">ای میل</h3>
+              <h3 className="text-cream font-display text-xl mb-2">Email</h3>
               <p className="text-muted-foreground">info@chocolate.pk</p>
             </div>
             <div>
-              <h3 className="text-cream font-display text-xl mb-2">اوقات کار</h3>
-              <p className="text-muted-foreground">پیر تا ہفتہ: صبح 10 بجے تا رات 8 بجے</p>
+              <h3 className="text-cream font-display text-xl mb-2">Working Hours</h3>
+              <p className="text-muted-foreground">Monday to Saturday: 10 AM – 8 PM</p>
             </div>
           </div>
 
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"
-              placeholder="آپ کا نام"
+              placeholder="Your Name"
               className="w-full bg-secondary border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
             />
             <input
               type="tel"
-              placeholder="فون نمبر"
+              placeholder="Phone Number"
               className="w-full bg-secondary border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
             />
             <textarea
-              placeholder="آپ کا پیغام"
+              placeholder="Your Message"
               rows={4}
               className="w-full bg-secondary border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold resize-none"
             />
@@ -49,7 +49,7 @@ const ContactSection = () => {
               type="submit"
               className="w-full bg-gold-gradient text-primary-foreground py-3 rounded-md font-semibold hover:opacity-90 transition-opacity"
             >
-              پیغام بھیجیں
+              Send Message
             </button>
           </form>
         </div>

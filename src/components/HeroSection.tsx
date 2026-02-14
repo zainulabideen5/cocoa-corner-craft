@@ -18,14 +18,14 @@ const HeroSection = () => {
           <span className="text-cream">Fine Chocolate</span>
         </h1>
         <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          ہر چاکلیٹ میں محبت اور فن کا خوبصورت امتزاج — بہترین کوکوا بینز سے تیار شدہ
+          A beautiful blend of love and craft in every chocolate — made from the finest cocoa beans
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
           <a href="#products" className="bg-gold-gradient text-primary-foreground px-8 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity">
-            ہماری مصنوعات دیکھیں
+            View Our Products
           </a>
           <a href="#contact" className="border border-gold text-gold px-8 py-3 rounded-md font-semibold hover:bg-gold/10 transition-colors">
-            رابطہ کریں
+            Contact Us
           </a>
         </div>
       </div>
