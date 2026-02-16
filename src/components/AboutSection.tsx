@@ -14,7 +14,7 @@ const AboutSection = () => {
             />
           </div>
           <div>
-            <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3">About Us</p>
+            <p className="text-gold tracking-[0.2em] uppercase text-sm mb-3"></p>
             <h2 className="text-3xl sm:text-4xl font-bold text-cream mb-6 leading-snug">
               A Tradition of <span className="text-gold-gradient">Pure Taste</span>
             </h2>
