@@ -13,19 +13,19 @@ const ContactSection = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-cream font-display text-xl mb-2">Our Address</h3>
-              <p className="text-muted-foreground">Lahore, Pakistan</p>
+              <p className="text-muted-foreground">Rawalpindi, Pakistan</p>
             </div>
             <div>
               <h3 className="text-cream font-display text-xl mb-2">Phone Number</h3>
-              <p className="text-muted-foreground">+92 300 1234567</p>
+              <p className="text-muted-foreground">+92 370 5608682</p>
             </div>
             <div>
               <h3 className="text-cream font-display text-xl mb-2">Email</h3>
-              <p className="text-muted-foreground">info@chocolate.pk</p>
+              <p className="text-muted-foreground"></p>
             </div>
             <div>
-              <h3 className="text-cream font-display text-xl mb-2">Working Hours</h3>
-              <p className="text-muted-foreground">Monday to Saturday: 10 AM – 8 PM</p>
+              <h3 className="text-cream font-display text-xl mb-2">Working </h3>
+              <p className="text-muted-foreground">Monday to Saturday</p>
             </div>
           </div>
 
