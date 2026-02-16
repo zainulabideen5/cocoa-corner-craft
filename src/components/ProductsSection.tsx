@@ -1,11 +1,18 @@
+import { useState } from "react";
 import productsImg from "@/assets/chocolate-products.jpg";
 
+type Category = "All" | "Chocolate" | "Classic" | "Premium";
+
 const products = [
-  { name: "Dark Truffle Box", price: "Rs. 2,500", desc: "An exquisite collection of Belgian dark chocolate truffles" },
-  { name: "Milk Chocolate Bar", price: "Rs. 800", desc: "Silky smooth milk chocolate made with pure milk" },
-  { name: "White Chocolate Gift", price: "Rs. 3,000", desc: "Premium white chocolate gift set" },
-  { name: "Mixed Truffle Box", price: "Rs. 4,500", desc: "The finest selection of every type of chocolate" },
+  { name: "Dark Truffle Box", price: "Rs. 2,500", desc: "An exquisite collection of Belgian dark chocolate truffles", category: "Chocolate" as Category },
+  { name: "Milk Chocolate Bar", price: "Rs. 800", desc: "Silky smooth milk chocolate made with pure milk", category: "Chocolate" as Category },
+  { name: "White Chocolate Gift", price: "Rs. 3,000", desc: "Premium white chocolate gift set", category: "Premium" as Category },
+  { name: "Mixed Truffle Box", price: "Rs. 4,500", desc: "The finest selection of every type of chocolate", category: "Premium" as Category },
+  { name: "Classic Brownie Box", price: "Rs. 1,200", desc: "Rich and fudgy classic brownies", category: "Classic" as Category },
+  { name: "Classic Fudge Pack", price: "Rs. 1,500", desc: "Traditional handmade chocolate fudge", category: "Classic" as Category },
 ];
+
+const categories: Category[] = ["All", "Chocolate", "Classic", "Premium"];
 
 const WHATSAPP_NUMBER = "923001234567";
 
@@ -17,6 +24,10 @@ const getWhatsAppLink = (productName: string, price: string) => {
 };
 
 const ProductsSection = () => {
+  const [activeCategory, setActiveCategory] = useState<Category>("All");
+
+  const filtered = activeCategory === "All" ? products : products.filter(p => p.category === activeCategory);
+
   return (
     <section id="products" className="section-padding bg-secondary/50">
       <div className="max-w-6xl mx-auto">
@@ -27,8 +38,25 @@ const ProductsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
+        {/* Category Tabs */}
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                activeCategory === cat
+                  ? "bg-gold text-primary border-gold"
+                  : "bg-transparent text-cream/70 border-cream/20 hover:border-gold/50 hover:text-cream"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filtered.map((product) => (
             <div
               key={product.name}
               className="bg-card rounded-lg overflow-hidden group hover:ring-1 hover:ring-gold/30 transition-all duration-300 flex flex-col"
