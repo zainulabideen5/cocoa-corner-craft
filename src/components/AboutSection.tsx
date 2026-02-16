@@ -22,7 +22,7 @@ const AboutSection = () => {
               We handcraft our chocolates using the finest selected cocoa beans. Every piece is a beautiful blend of quality, love, and artistry.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Our mission is to make every moment special — whether it's a celebration, a gift, or your personal indulgence.
+              Our mission is to make every moment special  whether it's a celebration, a gift, or your personal indulgence.
             </p>
             <div className="grid grid-cols-3 gap-4 text-center">
               {[
